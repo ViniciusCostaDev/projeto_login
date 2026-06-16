@@ -1,13 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Refatorando</title>
-    <link rel="icon" href="https://cache.refatorando.com/wp-content/uploads/2023/05/Favicon_Refatorando-1-100x100.png" type="image/x-icon">
+    <link rel="icon" href="https://refatorando.com" type="image/x-icon">
     <link rel="stylesheet" href="./public/css/styles.css">
 </head>
 <body>
-    
+    <main class="container">
+        
+        <section class="box1">
+            <h1 class="box1-welcome">Olá!<br>Seja bem-vindo(a) de volta.</h1>
+            <p class="box1-text">Faça login para continuar acessando a página.</p>
+        </section>
+
+        <section class="login-form">
+            <div class="login-form-content">
+                
+                <header>
+                    <figure>
+                        <img src="./public/images/Logo_Horizontal_colorida_Refatorando_1.png" alt="Logo Refatorando">
+                    </figure>
+                    <h2>Faça seu login</h2>
+                </header>
+
+                <form action="#" method="post">
+                    <input type="email" placeholder="E-mail" name="email" aria-label="E-mail" class="email" required>
+                    <input type="password" placeholder="Senha" name="pwd" aria-label="Senha" class="pwd" required>
+                    
+                    <a class="forgot" href="#">Esqueci minha senha</a>
+                    <button type="submit">Entrar</button>
+                </form>
+                
+                <div class="login-form-divider" role="separator">
+                    <span class="divider-text">ou faça login com</span>
+                </div>
+                
+                <a href="#" class="login-google-container">
+                    <img src="./public/images/google.svg" alt="Logo do Google">
+                    <span class="login-google-text">Sign in with Google</span>
+                </a>
+
+                <footer class="login-subscribe">
+                    <span>Não tem uma conta? <a href="#" class="login-subscribe-link">Inscreva-se</a></span>
+                </footer>
+            
+            </div>
+        </section>
+
+    </main>
 </body>
 </html>

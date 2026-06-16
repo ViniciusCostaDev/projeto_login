@@ -1,2 +1,234 @@
-/* Import the Roboto font from Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;700&family=Ubuntu&display=swap');
+body{
+   
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    
+}
+.box1{
+    flex:1;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/bg.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-position 1s;
+   
+}
+@keyframes slide {
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: 100% 0;
+    }
+   
+
+}
+.box1{
+    display: flex;
+    animation: slide 30s linear reverse;
+    animation-iteration-count: infinite;
+
+}
+
+.box1-welcome{
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    
+    
+}
+
+.box1-text{
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    line-height: 30px;
+    color: #fff;
+    opacity: 1;
+    font-weight: 100;
+    margin-left: 0;
+    margin-right: 55px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+.login-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex:1;
+    height: 100vh;
+    }
+
+
+    
+    .login-form-content{
+    display: flex;
+    flex-direction: column; 
+    align-items: stretch;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto; 
+    }
+    
+    img{
+    max-width: 100px;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    align-self: center;
+
+}
+
+    .login-form-content form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .login-form-content h4{
+        margin-bottom: 13px;
+    }
+    .login-form-content input{
+        border: solid 1px #ccc;
+        color: #2d2d2d;
+        border-radius: 3px;
+        padding: 5px;
+        
+    }
+
+    .login-form-content  .email{
+        margin-bottom: 5px;
+    }
+
+    .forgot{
+        align-self: flex-end;
+        text-decoration: none;
+        color: #2b2b2b;
+        margin-top:5px;
+        margin-bottom: 15px;
+    }
+    .login-form-content a:hover{
+        color: #0B9DCA;
+    }
+    .login-form-content button{
+        
+     text-align: center;
+    color: #fff;
+    background: linear-gradient(90deg, #0B9DCA 0%, #00B7BC 100%);
+    font-size: 12px;
+    padding: 13px 0;
+    margin: 0;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 4px 4px 4px #00000040;
+    cursor: pointer;;
+    }
+    .login-form-content button:hover{
+       background: linear-gradient(270deg, #0B9DCA 0%, #00B7BC 100%);
+    }
+
+    .login-form-divider{
+        
+        border-bottom:solid 1px #626476;
+    }
+    .divider-text{
+        width:150px;
+        background-color: #fff;
+        position: relative;
+        top: 10px;
+        left: calc(50% - 75px);
+        text-align: center;
+    }
+    
+   
+   
+   .login-google-container{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box; 
+    border: solid 1px #eaeaea;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;    
+    justify-content: center; 
+    text-decoration: none;
+    padding: 10px 0;  
+    margin-top: 30px;      
+    gap: 10px;
+    border-radius: 5px;
+}
+
+.login-google-container img{
+    width: 30px;
+    padding:0;
+    margin: 0;
+
+}
+.login-google-text{
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+.login-google-text:hover{
+    color: #0B9DCA;
+}
+
+.login-subscribe{
+    margin: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.login-subscribe-link{
+    color: #00B7BC;
+    text-decoration: none;
+}
+   .login-subscribe-link:hover{
+    color: #0B9DCA;
+   }
+    
+    @media screen and (max-width:768px) {
+        .container{
+            flex-direction: column;
+        }
+        .box1{
+            
+            flex:1;
+        }
+        .box1-welcome{
+            font-size: 1.6rem;
+        }
+        .box1-text{
+            font-size: 1rem;
+            margin:0;
+        }
+        
+        .login-form{
+            flex:3;
+        }
+        
+        .login-form-content{
+    min-width: 90%;
+    
+    }
+    }
+    
